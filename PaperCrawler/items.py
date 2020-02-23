@@ -11,8 +11,14 @@ import scrapy
 class DataAboutPaper(scrapy.Item):
     # define the fields for your item here like:
     # name = scrapy.Field()
-    author=scrapy.Field()
+    authors=scrapy.Field()
+    #Authors list Author //(AuthorName,AuthorUrl)
     pdfurl=scrapy.Field()
+    #pdf download url
     abstract=scrapy.Field()
-    conference=scrapy.Field()
+    timestamp=scrapy.Field()
+    # Abstract String
+    # conference=scrapy.Field() 
+    main_subject=scrapy.Field()
+    related_subject=scrapy.Field()
     # pass
