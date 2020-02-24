@@ -68,6 +68,11 @@ class PaperCrawler(scrapy.Spider):
             rsubject=rsubject[1].split(';')[1:]
         item['related_subject']=[sub.split('(')[0].rstrip().lstrip() for sub in rsubject]
         item['timestamp']=response.xpath('//div[@class="submission-history"]/text()').extract()[-1].strip('\n')
+        ##
+        i=DataAboutPaper()
+        i['abstract']='ererere'
+        i['pdfurl']='cccc'
+        item['it']=i
         self.logger.info('Finishing Parsing one Page,Return item')
         yield item
 

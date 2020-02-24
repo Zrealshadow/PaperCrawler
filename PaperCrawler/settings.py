@@ -89,11 +89,11 @@ ROBOTSTXT_OBEY = True
 #HTTPCACHE_IGNORE_HTTP_CODES = []
 #HTTPCACHE_STORAGE = 'scrapy.extensions.httpcache.FilesystemCacheStorage'
 
-from datetime import datetime
-#用时间戳进行标注
-today=datetime.now().timestamp()
-log_file_path="./log/scrapy_{}_.log".format(str(today.year))
+# from datetime import datetime
+# #用时间戳进行标注
+# today=datetime.now().timestamp()
+# log_file_path="./log/scrapy_{}_.log".format(str(today.year))
 
-#log output
-LOG_LEVEL='DEBUG'
-LOG_FILE=log_file_path
+# #log output
+# LOG_LEVEL='DEBUG'
+# LOG_FILE=log_file_path
