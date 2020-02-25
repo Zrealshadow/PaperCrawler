@@ -28,8 +28,17 @@ class DataAboutPaper(scrapy.Item):
 
 class ConferenceItem(scrapy.Item):
     ConfID=scrapy.Field()
-    ConfInstance=scrapy.Field()
-    pass
+    ConfType=scrapy.Field()
+    ConfEdits=scrapy.Field()
+    ConfDetail=scrapy.Field()
+    ConfDetailjson=scrapy.Field()
+    #pass
 
 class PaperItem(scrapy.Item):
-    pass
+    PaperAuthors=scrapy.Field()
+    PaperDetail=scrapy.Field()
+    Papertitle=scrapy.Field()
+    Papersub=scrapy.Field()
+    PaperDetailjson=scrapy.Field()
+    PaperConfurlID=scrapy.Field()
+    #pass
